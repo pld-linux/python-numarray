@@ -2,7 +2,7 @@
 %define		module	numarray
 
 Summary:	Array manipulation and computations for python
-Summary(pl):	Manipulacje macierzami oraz obliczenia dla pythona
+Summary(pl):	Operacje i obliczenia na tablicach dla Pythona
 Name:		python-%{module}
 Version:	1.3.2
 Release:	1
@@ -34,9 +34,9 @@ Numeric. In general its interface is very similar. It is mostly
 backward compatible and will be becoming more so in future releases.
 
 %description -l pl
-Numarray zapewnia narzêdzia do manipulacji tablicami oraz obliczeñ
+Numarray zapewnia narzêdzia do operacji oraz obliczeñ na tablicach
 podobne do tych, jakie zapewniaj± IDL, Matlab czy Octabe. U¿ywaj±c
-numarray mo¿liwe jest stworzenie bezpo¶rednio w pythonie, nie u¿ywaj±c
+numarray mo¿liwe jest stworzenie bezpo¶rednio w Pythonie, nie u¿ywaj±c
 wstawek C, C++ czy Fortranowych, wielu wydajnych aplikacji do
 przetwarzania danych numerycznych. Dla algorytmów, które nie pracuj±
 wydajnie z tablicami, mo¿liwe jest napisanie funkcji C, które mog±
@@ -54,10 +54,10 @@ Summary(pl):	Pliki nag³ówkowe dla python-numarray
 Group:		Development/Libraries
 
 %description devel
-Header files for python-numarray
+Header files for python-numarray.
 
 %description devel -l pl
-Pliki nag³ówkowe dla python-numarray
+Pliki nag³ówkowe dla python-numarray.
 
 %prep
 %setup -q -n %{module}-%{version}
@@ -89,5 +89,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%dir %py_incdir/%{module}
-%py_incdir/%{module}/*
+%dir %{py_incdir}/%{module}
+%{py_incdir}/%{module}/*
