@@ -4,12 +4,12 @@
 Summary:	Array manipulation and computations for python
 Summary(pl):	Operacje i obliczenia na tablicach dla Pythona
 Name:		python-%{module}
-Version:	1.5.0
+Version:	1.5.1
 Release:	1
 License:	GPL-like
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/numpy/%{module}-%{version}.tar.gz
-# Source0-md5:	6db331e321a74fa896cd5961fe33b7ef
+# Source0-md5:	e6c282b950f4383f294134424ae58f3b
 Source1:	http://dl.sourceforge.net/numpy/%{module}-1.3.html.tar.gz
 # Source1-md5:	ef0477bf9a75ba8acc5929f765dcf91d
 URL:		http://www.stsci.edu/resources/software_hardware/numarray
