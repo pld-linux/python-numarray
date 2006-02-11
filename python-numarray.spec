@@ -10,8 +10,8 @@ License:	GPL-like
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/numpy/%{module}-%{version}.tar.gz
 # Source0-md5:	e6c282b950f4383f294134424ae58f3b
-Source1:	http://dl.sourceforge.net/numpy/%{module}-1.3.html.tar.gz
-# Source1-md5:	ef0477bf9a75ba8acc5929f765dcf91d
+Source1:	http://dl.sourceforge.net/numpy/%{module}-1.5.pdf
+# Source1-md5:	922731aeb775b1f5eb3a0622750314e1
 URL:		http://www.stsci.edu/resources/software_hardware/numarray
 BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.3
@@ -61,6 +61,7 @@ Pliki nag³ówkowe dla python-numarray.
 
 %prep
 %setup -q -n %{module}-%{version}
+cp %{SOURCE1} .
 
 %build
 CFLAGS="%{rpmcflags}"
@@ -83,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.txt
+%doc README.txt *.pdf
 %dir %{py_sitedir}/%{module}
 %{py_sitedir}/%{module}/*
 
