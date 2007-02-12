@@ -2,7 +2,7 @@
 %define		module	numarray
 
 Summary:	Array manipulation and computations for python
-Summary(pl):	Operacje i obliczenia na tablicach dla Pythona
+Summary(pl.UTF-8):   Operacje i obliczenia na tablicach dla Pythona
 Name:		python-%{module}
 Version:	1.5.2
 Release:	1
@@ -33,31 +33,31 @@ Numarray is a re-implementation of an older Python array module called
 Numeric. In general its interface is very similar. It is mostly
 backward compatible and will be becoming more so in future releases.
 
-%description -l pl
-Numarray zapewnia narzêdzia do operacji oraz obliczeñ na tablicach
-podobne do tych, jakie zapewniaj± IDL, Matlab czy Octabe. U¿ywaj±c
-numarray mo¿liwe jest stworzenie bezpo¶rednio w Pythonie, nie u¿ywaj±c
+%description -l pl.UTF-8
+Numarray zapewnia narzÄ™dzia do operacji oraz obliczeÅ„ na tablicach
+podobne do tych, jakie zapewniajÄ… IDL, Matlab czy Octabe. UÅ¼ywajÄ…c
+numarray moÅ¼liwe jest stworzenie bezpoÅ›rednio w Pythonie, nie uÅ¼ywajÄ…c
 wstawek C, C++ czy Fortranowych, wielu wydajnych aplikacji do
-przetwarzania danych numerycznych. Dla algorytmów, które nie pracuj±
-wydajnie z tablicami, mo¿liwe jest napisanie funkcji C, które mog±
-czytaæ i zapisywaæ tablice numarray, i które mog± byæ wywo³ywane z
+przetwarzania danych numerycznych. Dla algorytmÃ³w, ktÃ³re nie pracujÄ…
+wydajnie z tablicami, moÅ¼liwe jest napisanie funkcji C, ktÃ³re mogÄ…
+czytaÄ‡ i zapisywaÄ‡ tablice numarray, i ktÃ³re mogÄ… byÄ‡ wywoÅ‚ywane z
 poziomu Pythona.
 
-Numarray jest ponown± implementacj± starszego modu³u Pythona -
-Numeric. Interfejsy tych modu³ów s± do siebie bardzo podobne. Numarray
-jest w wiêkszo¶ci przypadków kompatybilny wstecz, a sytuacja poprawi
-siê w nowszych wersjach.
+Numarray jest ponownÄ… implementacjÄ… starszego moduÅ‚u Pythona -
+Numeric. Interfejsy tych moduÅ‚Ã³w sÄ… do siebie bardzo podobne. Numarray
+jest w wiÄ™kszoÅ›ci przypadkÃ³w kompatybilny wstecz, a sytuacja poprawi
+siÄ™ w nowszych wersjach.
 
 %package devel
 Summary:	Header files for python-numarray
-Summary(pl):	Pliki nag³ówkowe dla python-numarray
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe dla python-numarray
 Group:		Development/Libraries
 
 %description devel
 Header files for python-numarray.
 
-%description devel -l pl
-Pliki nag³ówkowe dla python-numarray.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe dla python-numarray.
 
 %prep
 %setup -q -n %{module}-%{version}
