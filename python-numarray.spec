@@ -2,7 +2,7 @@
 %define		module	numarray
 
 Summary:	Array manipulation and computations for python
-Summary(pl.UTF-8):   Operacje i obliczenia na tablicach dla Pythona
+Summary(pl.UTF-8):	Operacje i obliczenia na tablicach dla Pythona
 Name:		python-%{module}
 Version:	1.5.2
 Release:	1
@@ -50,7 +50,7 @@ się w nowszych wersjach.
 
 %package devel
 Summary:	Header files for python-numarray
-Summary(pl.UTF-8):   Pliki nagłówkowe dla python-numarray
+Summary(pl.UTF-8):	Pliki nagłówkowe dla python-numarray
 Group:		Development/Libraries
 
 %description devel
