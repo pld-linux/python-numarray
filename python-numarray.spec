@@ -18,6 +18,8 @@ Patch2:		%{name}-refcount.patch
 URL:		http://www.stsci.edu/resources/software_hardware/numarray
 BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
