@@ -72,16 +72,12 @@ Pliki nagłówkowe dla python-numarray.
 cp %{SOURCE1} .
 
 %build
-CFLAGS="%{rpmcflags}"
-export CFLAGS
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py_install
 
 find $RPM_BUILD_ROOT%{py_sitedir} -name '*.py' | \
 	grep -v examples | \
