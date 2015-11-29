@@ -16,6 +16,7 @@ Patch0:		%{name}-includes.patch
 Patch1:		%{name}-python25.patch
 Patch2:		%{name}-refcount.patch
 URL:		http://www.stsci.edu/resources/software_hardware/numarray
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
